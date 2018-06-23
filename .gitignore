@@ -1,4 +1,5 @@
-data.xlsx
+*.xlsx
+*.txt
 yarn-error.log
 node_modules/
 *.swp
