@@ -1,0 +1,5 @@
+data.csv
+yarn-error.log
+node_modules/
+*.swp
+~*
