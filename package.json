@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+   "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
-    "jsdom": "^11.11.0"
+    "jsdom": "^11.11.0",
+    "lodash": "^4.17.10",
+    "xlsx": "^0.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.12.0"
   }
 }
