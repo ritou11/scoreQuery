@@ -9,7 +9,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "jsdom": "^11.11.0",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "xlsx": "^0.13.1"
   },
   "devDependencies": {
