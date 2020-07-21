@@ -13,7 +13,7 @@ const ax = axios.create({
 });
 
 const query = async (ksh, xm) => {
-  const { data } = await ax.get('wechat/gk-query.php', {
+  const { data } = await ax.get('wechat/gk-inquery.php', {
     params: {
       ksh,
       xm,
