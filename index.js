@@ -8,7 +8,12 @@ const { log } = console;
 const { JSDOM } = jsdom;
 
 const ax = axios.create({
+  // Option 1
   baseURL: 'http://q1.jletv.cn/',
+  // Option 2
+  // baseURL: 'http://q2.jletv.cn/',
+  // Option 3
+  // baseURL: 'http://q3.jletv.cn/',
   timeout: 2000,
 });
 
@@ -55,7 +60,7 @@ const invoke = (data, i, maxL) => {
   });
 };
 
-const workbook = xlsx.readFile('data.xlsx');
+const workbook = xlsx.readFile('data/2021.xlsx');
 const snl = workbook.SheetNames;
 const xlData = xlsx.utils.sheet_to_json(workbook.Sheets[snl[0]]);
 // invoke(xlData, 0, 2);
