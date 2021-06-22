@@ -49,8 +49,8 @@ const invoke = (data, i, maxL) => {
     log(`${data[i]['姓名']}, ${cj.zf}, ${i + 1}/${maxL}`);
     fs.appendFileSync('./res.txt', `${csh},${xm},${cj.yw},${cj.sx},${cj.zh},${cj.wy},${cj.mz},${cj.zf}\n`);
     if (i < maxL - 1) _.delay(invoke, 300, data, i + 1, maxL);
-  }).catch(() => {
-    // console.log(error.code);
+  }).catch((error) => {
+    console.error(error.code);
     if (i < maxL - 1) _.delay(invoke, 300, data, i, maxL);
   });
 };
