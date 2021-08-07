@@ -31,9 +31,9 @@ const query = async (ksh, xm) => {
   const rqCell = dom.window.document.querySelector('body > div > div.main.main-search.main-gk > div > div > div > table > tbody > tr:nth-child(9) > td');
   if (yxCell) {
     return {
-      yx: parseInt(yxCell.textContent, 10),
-      zy: parseInt(zyCell.textContent, 10),
-      rq: parseInt(rqCell.textContent, 10),
+      yx: yxCell.textContent,
+      zy: zyCell.textContent,
+      rq: rqCell.textContent,
     };
   }
   return {
